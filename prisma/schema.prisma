@@ -1,0 +1,88 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             String    @id @default(uuid())
+  walletAddress  String    @unique
+  profile        Profile?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+}
+
+model Profile {
+  id               String        @id @default(uuid())
+  userId           String        @unique
+  user             User          @relation(fields: [userId], references: [id])
+  name             String?       
+  role             UserRole      @default(CONSUMER)
+  reputation       Int           @default(50)
+  bio              String?
+  assets           EnergyAsset[]
+  tradesAsBuyer    Trade[]       @relation("BuyerTrades")
+  tradesAsSeller   Trade[]       @relation("SellerTrades")
+  history          History[]
+  sustainabilityScore Int        @default(0)
+}
+
+enum UserRole {
+  PRODUCER
+  CONSUMER
+  PROSUMER
+}
+
+model EnergyAsset {
+  id          String   @id @default(uuid())
+  profileId   String
+  profile     Profile  @relation(fields: [profileId], references: [id])
+  type        AssetType
+  capacity    Float    
+  availability Float   
+  location    String?
+  createdAt   DateTime @default(now())
+}
+
+enum AssetType {
+  SOLAR
+  WIND
+  HYDRO
+  FUSION
+}
+
+model Trade {
+  id          String   @id @default(uuid())
+  volume      Float    
+  price       Float    
+  buyerId     String
+  sellerId    String
+  buyer       Profile  @relation("BuyerTrades", fields: [buyerId], references: [id])
+  seller      Profile  @relation("SellerTrades", fields: [sellerId], references: [id])
+  status      TradeStatus @default(PENDING)
+  txHash      String?  @unique
+  createdAt   DateTime @default(now())
+}
+
+enum TradeStatus {
+  PENDING
+  CONFIRMED
+  FAILED
+}
+
+model History {
+  id          String   @id @default(uuid())
+  profileId   String
+  profile     Profile  @relation(fields: [profileId], references: [id])
+  type        String   
+  description String
+  amount      Float?
+  txHash      String?
+  createdAt   DateTime @default(now())
+}
