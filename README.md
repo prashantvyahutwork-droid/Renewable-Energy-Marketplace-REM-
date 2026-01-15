@@ -112,3 +112,20 @@ Designed and Architected by **Prashant**.
 ## Trade Place 
 ---
 [![Alt text](https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/Trade-place-imagetourl.cloud-1768447471315-hd6o7d.png)](Trade_Hub)
+
+
+[![Alt text](https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/Trade-place2-imagetourl.cloud-1768447470993-tx14fl.png)](Trade_Hub)
+
+[![Alt text](https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/Trade-place-3-imagetourl.cloud-1768447472421-91cqxc.png)](Trade_Hub)
+
+---
+
+## Transcation 
+---
+[![Alt text](https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/Transcation-imagetourl.cloud-1768447471352-q11piy.png)](Ledger)
+
+---
+
+## Setting 
+---
+
