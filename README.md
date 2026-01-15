@@ -92,3 +92,23 @@ Designed and Architected by **Prashant**.
 ---
 > [!NOTE]
 > BIJLI.GRID is currently in **Alpha v2.0**. All blockchain transactions in this demo are simulated for representative purposes.
+>
+
+## Visual Representation 
+
+### Login page 
+---
+[![Alt text](https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/login-imagetourl.cloud-1768447324834-ey3x4s.png)](Login_page)
+
+[![Alt text](https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/Register-login-imagetourl.cloud-1768447419408-f3zytz.png)](Register_Page)
+
+---
+### Profile 
+---
+[![Alt text](https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/Profile-imagetourl.cloud-1768447365339-7w4fus.png)](Profile)
+
+---
+
+## Trade Place 
+---
+[![Alt text](https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/Trade-place-imagetourl.cloud-1768447471315-hd6o7d.png)](Trade_Hub)
