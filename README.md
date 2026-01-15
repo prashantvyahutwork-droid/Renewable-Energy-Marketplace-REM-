@@ -128,4 +128,5 @@ Designed and Architected by **Prashant**.
 
 ## Setting 
 ---
+[![Alt text](https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/Setting-imagetourl.cloud-1768448307723-lhip30.png)](Setting)
 
